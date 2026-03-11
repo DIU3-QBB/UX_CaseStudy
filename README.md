@@ -17,31 +17,17 @@ Actualizado: 14/01/2026
 ![Método UX](img/caseStudy.png) 
 -----
 
->>> Este documento es el esqueleto del Case Study que explica el proceso de desarrollo de las 5 prácticas de DIU. Aparte de subir cada entrega a PRADO, se debe actualizar y dar formato de informe final a este documento online. Elimine este tipo de texto / comentarios desde la práctica 1 conforme proceda a cada paso
+**Grupo:** DIU3_QBB. **Curso:** 2025/26 
 
+**Nombre del Proyecto:** Goiko Experience: Optimización de la Carta y Flujos de Conversión
 
->>> Hay que Publicar de forma incremental "my Case Study" en Github... Es el momento de dejar este documento para que sea evaluado y calificado como parte de la práctica
->>> Documente bien la cabecera y asegurese que ha resumido los pasos realizados para el diseño de su producto
+**Descripción:** Análisis y propuesta de mejora para la plataforma web de Goiko, enfocada en eliminar la frustración del usuario mediante una mejor jerarquía visual de ingredientes, transparencia en precios y accesibilidad tanto para clientes (B2C) como para colaboradores (B2B).
 
-Grupo: DIUx_AABB.  Curso: 2025/26 
+**Logotipo:** ![Logo](img/logoQBB.png)
 
-Nombre del Proyecto: 
-
->>> Decida el nombre corto de su propuesta en la práctica 2 
-
-Descripción: 
-
->>> Describa la idea de su producto en la práctica 2 
-
-Logotipo: 
-
->>> Si diseña un logotipo para su producto en la práctica 3 pongalo aqui, a un tamaño adecuado. Si diseña un slogan añadalo aquí
-
-Miembros y nombre del equipo:
- * :bust_in_silhouette:  AA     :octocat:     
- * :bust_in_silhouette:  BB     :octocat:
-
->>> Los equipos son de 2 personas. Identifícaros con el nombre del Grupo y los enlaces a los perfiles de GitHub de cada integrante
+**Miembros y nombre del equipo:**
+ * :bust_in_silhouette: Manuel Gómez Rubio :octocat: [Enlace a GitHub]
+ * :bust_in_silhouette: Juan Manuel Jiménez Álvarez :octocat: [Enlace a GitHub]
 
 ----- 
 
@@ -49,55 +35,50 @@ Miembros y nombre del equipo:
 
 # Proceso de Diseño 
 
-
-
-
-
 <br>
 
 ## Paso 1. UX User & Desk Research & Analisis 
 
->>> Cualquier título puede ser adaptado. Recuerda borrar estos comentarios del template en tu documento
-
-
-### 1.a User Reseach Plan
-![Método UX](img/Competitive.png) 
+### 1.a User Research Plan
+![Método UX]
 -----
-
->>> Describe el plan en tu User Research (cómo se plantea la selección de usuarios). Borra esta línea cuando lo tengas.  
-
+Nuestra investigación se centra en la plataforma web de **Goiko**, analizando su eficacia como herramienta de reserva y consulta. Como estudiantes y usuarios habituales, planteamos una metodología mixta: iniciamos con un **Desk Research** para situarnos frente al mercado, definimos **User Personas** para empatizar con necesidades reales (dietas específicas, gestión de grupos y perfiles de negocio) y finalizamos con una **Usability Review** para detectar errores críticos de interfaz y rendimiento.
 
 ### 1.b Competitive Analysis
-![Método UX](img/Competitive.png) 
+![Método UX](img/Competitor Analysis.png) 
 -----
-
->>> Describe brevemente características de las aplicaciones que tiene asignadas tu grupo. Decidete por una y explica por qué se ha seleccionado. Borra esta línea cuando lo tengas. 
-
+Para el análisis comparativo en Granada, evaluamos **Gottan Grill** y **Mostaza Green Burger**. Aunque Gottan destaca por su potente identidad visual y Mostaza por una mejor estructura de carta, hemos seleccionado a **Goiko** como nuestro caso principal. El motivo es que, siendo un referente nacional, presenta contradicciones críticas: un gran atractivo visual empañado por descripciones en "texto plano" que dificultan la lectura rápida y una arquitectura que ignora las necesidades de usuarios profesionales (B2B).
 
 ### 1.c Personas
-![Método UX](img/Persona.png) 
+![Método UX](img/Persona #2.png) 
 -----
-
->>> Junto con la captura de pantalla de la ficha de la persona, haz una breve descripción de la misma. Recuerda que son dos. Los recursos de imagen deberán estar dentro de la carpeta P1/ Cuando termines, borra esta línea.  
-
+Hemos definido dos perfiles opuestos para cubrir todo el espectro de uso:
+* **Mateo (El Organizador Foodie):** Representa al cliente final (B2C). Joven digital que necesita encontrar opciones veganas rápido y gestionar reservas grupales desde su móvil sin fricciones.
+(img/Persona #1.png)
+* **Carlos Mendieta (El Proveedor):** Representa el enfoque de negocio (B2B). Un gerente que busca contactar con la marca para proponer una colaboración y se frustra ante la falta de un canal corporativo claro.
 
 ### 1.d User Journey Map
-![Método UX](img/JourneyMap.png) 
+![Método UX](img/journey-map#2.png) 
 ----
+Hemos mapeado dos experiencias comunes pero problemáticas:
+1. **Mateo** intentando reservar con amigos: Se evidencia la frustración al no poder filtrar la carta por alérgenos y las dificultades de uso del calendario en pantallas táctiles.
+(img/journey-map#1.png)
+2. **Carlos** buscando una alianza comercial: Su viaje termina en abandono al verse obligado a usar un canal de incidencias de clientes, lo que proyecta una imagen de marca hermética e informal.
 
->>> Describe el porqué de las dos experiencias de usuario contadas en el journey map. Por ejemplo, reflexiona si te parece que son habituales. Enlaza con los recursos journey que están en la carpeta P1/. Borra esta linea del template cuando termines.  
-
+Estas experiencias son habituales en usuarios que buscan eficiencia y transparencia en servicios de restauración modernos.
 
 ### 1.e Usability Review
-![Método UX](img/usabilityReview.png) 
+![Método UX](
 ----
+El objetivo es revisar la usabilidad de la web de Goiko mediante un análisis experto basado en principios heurísticos.
 
->>>  El objetivo es revisar la usabilidad del competidor seleccionado. Usamos un checklist de verificación. Tras usarlo, subelo a la carpeta P1/ Ofrece aquí un parrafo para:
->>> - Enlace al documento:  (xls/pdf) 
->>> - URL y Valoración numérica obtenida: 
->>> - Comentario sobre la revisión:  (puntos fuertes y débiles detectados)
+* **Enlace al documento:** [P1/Usability-review-template-No-score.pdf](5.UsabilityReview/Usability-review-template%20-%20Usability%20scores.pdf)
+* **URL y Valoración numérica:** www.goiko.com — **71 / 100 (Buena)**
+* **Comentario sobre la revisión:** * **Puntos Fuertes:** Excelente "Food Appeal" (fotografía de producto), URL predecible y una identidad de marca muy sólida y reconocible.
+    * **Puntos Débiles:** Falta de filtros por ingredientes/alérgenos y precios ocultos en la vista general. El rendimiento web es mejorable debido al peso de las imágenes, y existe una carencia crítica de feedback visual en los formularios de contacto y personalización de pedidos.
 
 <br>
+
 
 ## Paso 2. UX Design  
 
