@@ -216,7 +216,7 @@ Mateo, un joven organizador que buscaba reservar una mesa desde el móvil, se en
 
 Por su parte, Carlos, un empresario que intentaba contactar con la marca para ofrecerse como proveedor de panes artesanos, se frustró ante la total ausencia de un área corporativa o de "Partners", viéndose obligado a usar un canal de atención al cliente posventa que no proyectaba confianza profesional.
 
-Finalizamos con una revisión de usabilidad (Usability Review), donde la plataforma obtuvo una puntuación global de 7 sobre 100 (Buena).
+Finalizamos con una revisión de usabilidad (Usability Review), donde la plataforma obtuvo una puntuación global de 72 sobre 100 (Buena).
 
 Comprobamos que la web destaca por un excelente atractivo visual de sus productos (food appeal) y una URL predecible con navegación sencilla.
 
