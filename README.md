@@ -40,39 +40,45 @@ Actualizado: 14/01/2026
 ## Paso 1. UX User & Desk Research & Analisis 
 
 ### 1.a User Research Plan
-![Método UX]
+![Método UX](img/Competitive.png) 
 -----
 Nuestra investigación se centra en la plataforma web de **Goiko**, analizando su eficacia como herramienta de reserva y consulta. Como estudiantes y usuarios habituales, planteamos una metodología mixta: iniciamos con un **Desk Research** para situarnos frente al mercado, definimos **User Personas** para empatizar con necesidades reales (dietas específicas, gestión de grupos y perfiles de negocio) y finalizamos con una **Usability Review** para detectar errores críticos de interfaz y rendimiento.
 
+* [📄 Ver Plan de Investigación (PDF)](P1/1.UserResearchPlan/UserResearchPlan.pdf)
+
 ### 1.b Competitive Analysis
-![Método UX](img/Competitor Analysis.png) 
+![Método UX](img/Competitor%20Analysis.png) 
 -----
 Para el análisis comparativo en Granada, evaluamos **Gottan Grill** y **Mostaza Green Burger**. Aunque Gottan destaca por su potente identidad visual y Mostaza por una mejor estructura de carta, hemos seleccionado a **Goiko** como nuestro caso principal. El motivo es que, siendo un referente nacional, presenta contradicciones críticas: un gran atractivo visual empañado por descripciones en "texto plano" que dificultan la lectura rápida y una arquitectura que ignora las necesidades de usuarios profesionales (B2B).
 
+* [📊 Ver Análisis Competitivo (PDF)](P1/2.CompetitorAnalysis/CompetitorAnalysis.pdf)
+
 ### 1.c Personas
-![Método UX](img/Persona #2.png) 
+![Persona 1](img/Persona%20%231.png) 
+![Persona 2](img/Persona%20%232.png) 
 -----
 Hemos definido dos perfiles opuestos para cubrir todo el espectro de uso:
 * **Mateo (El Organizador Foodie):** Representa al cliente final (B2C). Joven digital que necesita encontrar opciones veganas rápido y gestionar reservas grupales desde su móvil sin fricciones.
-(img/Persona #1.png)
 * **Carlos Mendieta (El Proveedor):** Representa el enfoque de negocio (B2B). Un gerente que busca contactar con la marca para proponer una colaboración y se frustra ante la falta de un canal corporativo claro.
 
+* [👤 Ver Justificación de Personas (PDF)](P1/3.Personas/Justificaci%C3%B3n.pdf)
+
 ### 1.d User Journey Map
-![Método UX](img/journey-map#2.png) 
+![Journey 1](img/journey-map%231.png) 
+![Journey 2](img/journey-map%232.png) 
 ----
 Hemos mapeado dos experiencias comunes pero problemáticas:
 1. **Mateo** intentando reservar con amigos: Se evidencia la frustración al no poder filtrar la carta por alérgenos y las dificultades de uso del calendario en pantallas táctiles.
-(img/journey-map#1.png)
 2. **Carlos** buscando una alianza comercial: Su viaje termina en abandono al verse obligado a usar un canal de incidencias de clientes, lo que proyecta una imagen de marca hermética e informal.
 
-Estas experiencias son habituales en usuarios que buscan eficiencia y transparencia en servicios de restauración modernos.
+* [🗺️ Ver Journey Maps (PDF)](P1/4.JourneyMaps/Persona%20%26%20User%20JourneyMap.pdf)
 
 ### 1.e Usability Review
-![Método UX](
+![Revisión](img/usabilityReview.png)
 ----
 El objetivo es revisar la usabilidad de la web de Goiko mediante un análisis experto basado en principios heurísticos.
 
-* **Enlace al documento:** [P1/Usability-review-template-No-score.pdf](5.UsabilityReview/Usability-review-template%20-%20Usability%20scores.pdf)
+* **Enlace al documento:** [📊 Informe de Usabilidad (PDF)](P1/5.UsabilityReview/Usability-review-template%20-%20Usability%20scores.pdf)
 * **URL y Valoración numérica:** www.goiko.com — **71 / 100 (Buena)**
 * **Comentario sobre la revisión:** * **Puntos Fuertes:** Excelente "Food Appeal" (fotografía de producto), URL predecible y una identidad de marca muy sólida y reconocible.
     * **Puntos Débiles:** Falta de filtros por ingredientes/alérgenos y precios ocultos en la vista general. El rendimiento web es mejorable debido al peso de las imágenes, y existe una carencia crítica de feedback visual en los formularios de contacto y personalización de pedidos.
