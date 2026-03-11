@@ -44,7 +44,6 @@ Actualizado: 14/01/2026
 ---
 
 ## 1.a User Research Plan
-![Método UX](img/Competitive.png)
 
 ---
 
@@ -172,8 +171,6 @@ Al centrar el contacto solo en la posventa, se ignora la intención de negocio d
 ---
 
 ## 1.e Usability Review
-![Revisión](img/usabilityReview.png)
-
 ---
 
 El objetivo es revisar la usabilidad de la web de Goiko mediante un análisis experto basado en principios heurísticos.
