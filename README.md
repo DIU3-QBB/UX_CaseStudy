@@ -43,7 +43,7 @@ Actualizado: 14/01/2026
 
 ---
 
-<h3 style="color:#ff6b00;">1.a User Research Plan</h3>
+## 1.a User Research Plan
 
 ---
 
@@ -67,7 +67,7 @@ La estrategia se articulará combinando métodos cualitativos y analíticos. Ini
 
 ---
 
-<h3 style="color:#ff6b00;">1.b Competitive Analysis</h3>
+## 1.b Competitive Analysis
 ![Método UX](img/Competitor%20Analysis.png)
 
 ### Desk Research: Competitive Analysis
@@ -119,7 +119,7 @@ Para comparar las 3 páginas, hemos valorado de 0 a 3 estrellas los siguientes c
 
 ---
 
-<h3 style="color:#ff6b00;">1.c Personas</h3>
+## 1.c Personas
 ![Persona 1](img/Persona%20%231.png)  
 ![Persona 2](img/Persona%20%232.png)
 
@@ -143,7 +143,7 @@ Analizar ambos perfiles nos permite evaluar la interfaz de forma integral: no so
 * [👤 Ver Justificación de Personas (PDF)](P1/3.Personas/Justificaci%C3%B3n.pdf)
 ---
 
-<h3 style="color:#ff6b00;">1.d User Journey Map</h3>
+## 1.d User Journey Map
 ![Journey 1](img/journey-map%231.png)  
 ![Journey 2](img/journey-map%232.png)
 
@@ -170,7 +170,7 @@ Al centrar el contacto solo en la posventa, se ignora la intención de negocio d
 
 ---
 
-<h3 style="color:#ff6b00;">1.e Usability Review</h3>
+## 1.e Usability Review
 ---
 
 El objetivo es revisar la usabilidad de la web de Goiko mediante un análisis experto basado en principios heurísticos.
@@ -197,7 +197,7 @@ El objetivo es revisar la usabilidad de la web de Goiko mediante un análisis ex
 
 ---
 
-<h3 style="color:#ff6b00;">1.f Briefing</h3>
+## 1.f Briefing
 
 ### Briefing
 
