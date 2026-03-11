@@ -179,7 +179,7 @@ Al centrar el contacto solo en la posventa, se ignora la intención de negocio d
 El objetivo es revisar la usabilidad de la web de Goiko mediante un análisis experto basado en principios heurísticos.
 
 - **Enlace al documento:** [📊 Informe de Usabilidad (PDF)](P1/5.UsabilityReview/Usability-review-template%20-%20Usability%20scores.pdf)  
-- **URL y Valoración numérica:** www.goiko.com — **71 / 100 (Buena)**
+- **URL y Valoración numérica:** www.goiko.com — **72 / 100 (Buena)**
 
 ### Comentario sobre la revisión
 
