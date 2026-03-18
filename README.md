@@ -200,41 +200,38 @@ El objetivo es revisar la usabilidad de la web de Goiko mediante un análisis ex
 ## 1.f Briefing
 
 ### Briefing
+# Briefing
 
 Como se indicó inicialmente en el Research Plan, nuestro objetivo principal era analizar y mejorar la experiencia de usuario en la plataforma web de Goiko, optimizando los flujos de conversión (reservas y consulta de carta) y haciendo la navegación más accesible tanto para el cliente final como para posibles colaboradores comerciales.
 
-Para ello, iniciamos haciendo un análisis competitivo (Desk Research) con otras dos marcas locales relevantes: Gottan Grill y Mostaza Green Burger.
+Para ello, iniciamos haciendo un análisis competitivo (Desk Research) con otras dos marcas locales relevantes: Gottan Grill y Mostaza Green Burger. Concluimos que los competidores presentaban ciertas ventajas de diseño; por ejemplo, Gottan Grill lograba un mayor impacto visual en su identidad gráfica y un mejor rendimiento web con respecto a nuestra página principal.
 
-Concluimos que los competidores presentaban ciertas ventajas de diseño; por ejemplo, Gottan Grill lograba un mayor impacto visual en su identidad gráfica y un mejor rendimiento web con respecto a nuestra página principal.
+Después, valoramos la experiencia de dos perfiles (B2C y B2B) con intereses totalmente distintos en el uso de la página. Mateo, un joven organizador que buscaba reservar una mesa desde el móvil, se encontró con una falta de filtros rápidos para encontrar opciones veganas y un widget de reservas poco adaptado a pantallas táctiles. Por su parte, Carlos, un empresario que intentaba contactar con la marca para ofrecerse como proveedor de panes artesanos, se frustró ante la total ausencia de un área corporativa o de "Partners", viéndose obligado a usar un canal de atención al cliente posventa que no proyectaba confianza profesional.
 
-Después, valoramos la experiencia de dos perfiles (B2C y B2B) con intereses totalmente distintos en el uso de la página.
+Finalizamos con una Usability Review donde la plataforma obtuvo una puntuación de 63/100 (Moderada). Aunque destaca por su alto atractivo visual (food appeal) y una identidad de marca sólida, presenta fallos críticos en la arquitectura de información. La ausencia de buscadores y filtros por ingredientes (calificada como "Muy Pobre") obliga al usuario a una navegación manual ineficiente.
 
-Mateo, un joven organizador que buscaba reservar una mesa desde el móvil, se encontró con una falta de filtros rápidos para encontrar opciones veganas y un widget de reservas poco adaptado a pantallas táctiles.
+A nivel interactivo, detectamos fricciones severas: el uso de "texto plano" oculta información clave como precios e ingredientes, y el sistema de navegación no respeta los estándares del botón "atrás" del navegador. Además, la falta de feedback visual en errores de formulario y la carga lenta de imágenes de alta resolución lastran la conversión. En conclusión, la web es estéticamente potente pero funcionalmente limitada, requiriendo una optimización urgente en filtros, jerarquía de textos y rendimiento técnico para ser verdaderamente intuitiva.
 
-Por su parte, Carlos, un empresario que intentaba contactar con la marca para ofrecerse como proveedor de panes artesanos, se frustró ante la total ausencia de un área corporativa o de "Partners", viéndose obligado a usar un canal de atención al cliente posventa que no proyectaba confianza profesional.
+En conclusión, la plataforma de Goiko posee una base sólida y un diseño que invita al consumo, pero requiere ajustes estratégicos. Es prioritario implementar un sistema de filtrado en la carta, añadir transparencia mostrando los precios desde el primer nivel de navegación, optimizar el peso de los archivos multimedia, mejorar el feedback visual en los formularios de pedido y algunas cosas más. Con estas mejoras, la web lograría una experiencia de usuario (UX) sobresaliente, intuitiva y accesible para todos sus perfiles de cliente.
 
-Finalizamos con una revisión de usabilidad (Usability Review), donde la plataforma obtuvo una puntuación global de 72 sobre 100 (Buena).
+## Prioridades de Optimización
 
-Comprobamos que la web destaca por un excelente atractivo visual de sus productos (food appeal) y una URL predecible con navegación sencilla.
+Basado en el análisis de UX y la revisión de usabilidad, se han establecido las siguientes acciones prioritarias para mejorar la conversión y la experiencia del usuario:
 
-Sin embargo, detectamos áreas de mejora críticas que interrumpen el flujo del usuario:
+* **Arquitectura de Información y Filtrado:**
+    * Implementar un sistema de buscadores y filtros avanzados por ingredientes y tipos de dieta (ej. opciones veganas).
+    * Reestructurar la jerarquía de textos para eliminar el uso de "texto plano" en información crítica.
+* **Transparencia y Conversión:**
+    * Mostrar precios e ingredientes de forma clara desde el primer nivel de navegación de la carta.
+    * Optimizar el widget de reservas para garantizar una experiencia fluida en dispositivos móviles (pantallas táctiles).
+* **Rendimiento Técnico:**
+    * Optimizar el peso de archivos multimedia y carga de imágenes de alta resolución para mejorar los tiempos de respuesta.
+    * Corregir el sistema de navegación para que respete los estándares del botón "atrás" del navegador.
+* **Experiencia B2B y Feedback:**
+    * Crear un área corporativa o sección de "Partners" dedicada para perfiles profesionales y proveedores.
+    * Mejorar el feedback visual (mensajes de error y éxito) en todos los formularios de la plataforma.
 
-- La ausencia total de un buscador o filtros por ingredientes (lo que dificulta encontrar opciones específicas como comida vegana).
-- La falta de precios visibles directamente en la vista general de la carta.
-- Problemas de rendimiento con tiempos de carga lentos en imágenes de alta resolución.
-
-Además, a nivel interactivo, la falta de señalización en las selecciones obligatorias al personalizar un pedido y la escasa visibilidad de las opciones de contacto corporativo (B2B) generan fricciones innecesarias.
-
-En conclusión, la plataforma de Goiko posee una base sólida y un diseño que invita al consumo, pero requiere ajustes estratégicos.
-
-Es prioritario:
-
-- Implementar un sistema de filtrado en la carta.
-- Añadir transparencia mostrando los precios desde el primer nivel de navegación.
-- Optimizar el peso de los archivos multimedia.
-- Mejorar el feedback visual en los formularios de pedido.
-
-Con estas mejoras, la web lograría una experiencia de usuario (UX) sobresaliente, intuitiva y accesible para todos sus perfiles de cliente.
+> Con estas mejoras, la web lograría una experiencia de usuario (UX) sobresaliente, intuitiva y accesible para todos sus perfiles de cliente.
 
 ## Paso 2. UX Design  
 
