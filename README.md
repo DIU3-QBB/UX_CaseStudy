@@ -173,26 +173,26 @@ Al centrar el contacto solo en la posventa, se ignora la intención de negocio d
 ## 1.e Usability Review
 ---
 
-El objetivo es revisar la usabilidad de la web de Goiko mediante un análisis experto basado en principios heurísticos.
+El objetivo es revisar la usabilidad de la web de Goiko mediante un análisis experto basado en principios heurísticos y estándares de industria.
 
 - **Enlace al documento:** [📊 Informe de Usabilidad (PDF)](P1/5.UsabilityReview/Usability-review-template%20-%20Usability%20scores.pdf)  
-- **URL y Valoración numérica:** www.goiko.com — **72 / 100 (Buena)**
+- **URL y Valoración numérica:** www.goiko.com — **63 / 100 (Moderada)**
 
 ### Comentario sobre la revisión
 
 **Puntos Fuertes:**
 
-- Excelente "Food Appeal" (fotografía de producto).
-- URL predecible.
-- Identidad de marca muy sólida y reconocible.
+- **Excelente "Food Appeal":** Gran calidad en la fotografía de producto que incentiva el consumo.
+- **Identidad Visual:** Marca muy sólida, reconocible y consistente en términos de diseño.
+- **Accesibilidad URL:** Dominio predecible y fácil de encontrar en buscadores.
 
 **Puntos Débiles:**
 
-- Falta de filtros por ingredientes/alérgenos.
-- Precios ocultos en la vista general.
-- El rendimiento web es mejorable debido al peso de las imágenes.
-- Carencia crítica de feedback visual en los formularios de contacto y personalización de pedidos.
-
+- **Búsqueda y Filtrado Críticos:** Ausencia total de un buscador por ingredientes o filtros de dieta (vegana/alérgenos), calificada como **Muy Pobre**.
+- **Arquitectura de Información:** El uso de "texto plano" oculta datos clave como precios e ingredientes, dificultando la escaneabilidad.
+- **Navegación e Interacción:** El sistema no respeta estándares como el botón "atrás" del navegador en menús críticos y presenta errores de feedback en la gestión de permisos (ubicación).
+- **Rendimiento Técnico:** Tiempos de carga elevados en imágenes de alta resolución que lastran la fluidez de la conversión.
+- **Feedback en Formularios:** Falta de señalización clara en campos obligatorios y mensajes de error poco profesionales.
 <br>
 
 ---
