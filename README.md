@@ -233,61 +233,60 @@ Basado en el análisis de UX y la revisión de usabilidad, se han establecido la
 
 > Con estas mejoras, la web lograría una experiencia de usuario (UX) sobresaliente, intuitiva y accesible para todos sus perfiles de cliente.
 
-## Paso 2. UX Design  
+## Paso 2. UX Design
 
->>> Cualquier título puede ser adaptado. Recuerda borrar estos comentarios del template en tu documento
-
-### 2.a Reframing / IDEACION: Feedback Capture Grid / EMpathy map 
-![Método UX](img/feedback-capture-grid.png) 
+### 2.a Reframing / IDEACION: Feedback Capture Grid / Empathy map
+![Método UX](img/feedback-capture-grid.png)
 ----
-
->>> Comenta con un diagrama los aspectos más destacados a modo de conclusion de la práctica anterior. De qué carece la competencia?? Tu diagrama puede ser una figura subida a la carpeta P2/
-
-
- Interesante | Críticas     
-| ------------- | -------
-  Preguntas | Nuevas ideas
-  
-    
->>> Explica el Problema y plantea una hipótesis. Es decir, explica aquí qué 
->>> se plantea como "propuesta de valor" para un nuevo diseño de aplicación propio
-
 
 ### 2.b ScopeCanvas
 ![Método UX](img/ScopeCanvas.png)
 ----
+Nuestra propuesta de valor, enfocada en la exclusividad y la sostenibilidad local, se detalla en el siguiente ScopeCanvas:
 
->>> Propuesta de valor, pero ahora en vez de un texto es un ScopeCanvas que has subido a P2/ y enlazado desde aqui. Tambien vale una imagen miniatura del recurso.
->>> No olvides que tu propuesta ya tiene un nombre corto y puedes actualizar la cabecera de este archivo
+* **Ver Recurso:** [ScopeCanvas.pdf](./ScopeCanvas/ScopeCanvas.pdf)
 
+---
 
-
-### 2.b User Flow (task) analysis 
-![Método UX](img/Sitemap.png) 
+### 2.b User Flow (task) analysis
+![Método UX](img/Sitemap.png)
 -----
+Se han diseñado flujos de tareas específicos para los roles principales de la plataforma, asegurando la integridad del sistema de reservas.
 
->>> Definir "User Map" y "Task Flow" ... enlazar desde P2/ y describir brevemente
+* [cite_start]**Flujo del Cliente:** El usuario explora la oferta, consulta el origen y debe registrarse/iniciarse sesión obligatoriamente para completar la reserva[cite: 1].
+* **Flujo del Colaborador:** El productor local puede gestionar su información y visualizar cómo se presentan sus productos a la comunidad.
 
+> Recursos: [UserFlowCustomer.pdf](./UserFlow/UserFlowCustomer.pdf) | [UserFlowCollab.pdf](./UserFlow/UserFlowCollab.pdf)
 
-### 2.c IA: Sitemap + Labelling 
-![Método UX](img/labelling.png) 
+---
+
+### 2.c IA: Sitemap + Labelling
+![Método UX](img/labelling.png)
 ----
+[cite_start]La arquitectura de la información se estructura para facilitar el descubrimiento del producto, condicionando la reserva al flujo de identificación para garantizar el control de stock[cite: 2].
 
->>> Identificar términos para diálogo con usuario (evita el spanglish) y la arquitectura de la información. Es muy apropiado un diagrama tipo sitemap y una tabla que se ampliaría para llevar asociado la columna iconos (tanto para la web como para una app). 
+* **Sitemap Visual:** [SiteMap.pdf](./Sitemap/SiteMap.pdf)
 
-Término | Significado     
-| ------------- | -------
-  Login  | acceder a plataforma
+| Término | Significado | Icono sugerido |
+| :--- | :--- | :--- |
+| **Raíces** | [cite_start]Página de inicio con la selección de la burger del mes[cite: 2]. | `Estrella` |
+| **Ficha Producto** | [cite_start]Detalle de ingredientes, alérgenos y descripción DOP[cite: 2]. | `Cubiertos` |
+| **Conoce el Origen** | [cite_start]Información y detalles de los productores locales[cite: 2]. | `Mapa` |
+| **Estado del Stock** | [cite_start]Unidades disponibles en el local seleccionado[cite: 2]. | `Alerta` |
+| **Identificación** | [cite_start]Flujo obligatorio de Login/Registro previo a la reserva[cite: 2]. | `Candado` |
+| **Asegurar Reserva** | [cite_start]Confirmación final y generación de código QR[cite: 2]. | `Ticket` |
 
+---
 
 ### 2.d Wireframes
-![Método UX](img/Wireframes.png) 
+![Método UX](img/Wireframes.png)
 -----
+Se ha utilizado **Figma** para diseñar el layout en baja fidelidad, priorizando la visualización del producto y la facilidad de reserva en dispositivos móviles.
 
->>> Plantear el diseño del layout para Web/movil (organización y simulación). Describa la herramienta usada 
+* **Wireframes Completos:** [Wireframes.pdf](./Wireframes/Wireframes.pdf)
+* **Bocetos de Exploración:** [Bocetos_Iniciales.pdf](./Wireframes/Bocetos_260408_182537.pdf)
 
-<br>
-
+Los diseños cubren desde la página de eventos/productos hasta el perfil del usuario, donde puede consultar sus reservas activas y su historial.
 ## Paso 3. Mi UX-Case Study (diseño)
 
 >>> Cualquier título puede ser adaptado. Recuerda borrar estos comentarios del template en tu documento
