@@ -238,13 +238,16 @@ Basado en el análisis de UX y la revisión de usabilidad, se han establecido la
 ### 2.a Reframing / IDEACION: Feedback Capture Grid / Empathy map
 ![Método UX](img/feedback-capture-grid.png)
 ----
+A continuación se puede ver el empathy map realizado para el usuario principal, donde analizamos sus necesidades y puntos de dolor respecto a la exclusividad y trazabilidad del producto:
+
+> Recursos: [Empathy Customer Map.pdf](./P2/EmpathyMap/Empathy%20Customer%20Map.pdf)
 
 ### 2.b ScopeCanvas
 ![Método UX](img/ScopeCanvas.png)
 ----
 Nuestra propuesta de valor, enfocada en la exclusividad y la sostenibilidad local, se detalla en el siguiente ScopeCanvas:
 
-* **Ver Recurso:** [ScopeCanvas.pdf](./ScopeCanvas/ScopeCanvas.pdf)
+* **Ver Recurso:** [ScopeCanvas.pdf](./P2/ScopeCanvas/ScopeCanvas.pdf)
 
 ---
 
@@ -253,28 +256,30 @@ Nuestra propuesta de valor, enfocada en la exclusividad y la sostenibilidad loca
 -----
 Se han diseñado flujos de tareas específicos para los roles principales de la plataforma, asegurando la integridad del sistema de reservas.
 
-* [cite_start]**Flujo del Cliente:** El usuario explora la oferta, consulta el origen y debe registrarse/iniciarse sesión obligatoriamente para completar la reserva[cite: 1].
+* **Flujo del Cliente:** El usuario explora la oferta, consulta el origen y debe registrarse/iniciarse sesión obligatoriamente para completar la reserva.
 * **Flujo del Colaborador:** El productor local puede gestionar su información y visualizar cómo se presentan sus productos a la comunidad.
 
-> Recursos: [UserFlowCustomer.pdf](./UserFlow/UserFlowCustomer.pdf) | [UserFlowCollab.pdf](./UserFlow/UserFlowCollab.pdf)
+> Recursos: [UserFlowCustomer.pdf](./P2/UserFlow/UserFlowCustomer.pdf) | [UserFlowCollab.pdf](./P2/UserFlow/UserFlowCollab.pdf) | [UserMap.pdf](./P2/UserFlow/UserMap.pdf)
 
 ---
 
 ### 2.c IA: Sitemap + Labelling
 ![Método UX](img/labelling.png)
 ----
-[cite_start]La arquitectura de la información se estructura para facilitar el descubrimiento del producto, condicionando la reserva al flujo de identificación para garantizar el control de stock[cite: 2].
+La arquitectura de la información se estructura para facilitar el descubrimiento del producto, condicionando la reserva al flujo de identificación para garantizar el control de stock.
 
-* **Sitemap Visual:** [SiteMap.pdf](./Sitemap/SiteMap.pdf)
+* **Sitemap Visual:** [SiteMap.pdf](./P2/Sitemap/SiteMap.pdf)
 
 | Término | Significado | Icono sugerido |
 | :--- | :--- | :--- |
-| **Raíces** | [cite_start]Página de inicio con la selección de la burger del mes[cite: 2]. | `Estrella` |
-| **Ficha Producto** | [cite_start]Detalle de ingredientes, alérgenos y descripción DOP[cite: 2]. | `Cubiertos` |
-| **Conoce el Origen** | [cite_start]Información y detalles de los productores locales[cite: 2]. | `Mapa` |
-| **Estado del Stock** | [cite_start]Unidades disponibles en el local seleccionado[cite: 2]. | `Alerta` |
-| **Identificación** | [cite_start]Flujo obligatorio de Login/Registro previo a la reserva[cite: 2]. | `Candado` |
-| **Asegurar Reserva** | [cite_start]Confirmación final y generación de código QR[cite: 2]. | `Ticket` |
+| **Raíces** | Página de inicio con la selección de la burger del mes. | `Estrella` |
+| **Ficha Producto** | Detalle de ingredientes, alérgenos y descripción DOP. | `Cubiertos` |
+| **Conoce el Origen** | Información y detalles de los productores locales. | `Mapa` |
+| **Estado del Stock** | Unidades disponibles en el local seleccionado. | `Alerta` |
+| **Identificación** | Flujo obligatorio de Login/Registro previo a la reserva. | `Candado` |
+| **Asegurar Reserva** | Confirmación final y generación de código QR. | `Ticket` |
+
+> Matriz de etiquetas completa: [Hoja de Labelling.pdf](./P2/Sitemap/Hoja%20de%20cálculo%20sin%20título%20-%20Hoja%202-1.pdf)
 
 ---
 
@@ -283,10 +288,10 @@ Se han diseñado flujos de tareas específicos para los roles principales de la 
 -----
 Se ha utilizado **Figma** para diseñar el layout en baja fidelidad, priorizando la visualización del producto y la facilidad de reserva en dispositivos móviles.
 
-* **Wireframes Completos:** [Wireframes.pdf](./Wireframes/Wireframes.pdf)
-* **Bocetos de Exploración:** [Bocetos_Iniciales.pdf](./Wireframes/Bocetos_260408_182537.pdf)
+* **Wireframes Completos:** [Wireframes.pdf](./P2/Wireframes/Wireframes.pdf)
+* **Bocetos de Exploración:** [Bocetos_Iniciales.pdf](./P2/Wireframes/Bocetos_260408_182537.pdf)
 
-Los diseños cubren desde la página de eventos/productos hasta el perfil del usuario, donde puede consultar sus reservas activas y su historial.
+Los diseños cubren desde la página de productos hasta el perfil del usuario, donde puede consultar sus reservas activas y su historial de canjes.
 ## Paso 3. Mi UX-Case Study (diseño)
 
 >>> Cualquier título puede ser adaptado. Recuerda borrar estos comentarios del template en tu documento
