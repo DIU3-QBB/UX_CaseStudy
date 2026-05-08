@@ -303,7 +303,7 @@ Los diseños cubren desde la página de productos hasta el perfil del usuario, d
 El moodboard define el sistema visual de **Goiko Experience: Raíces**. Recoge la paleta de color (Noir `#1A1209`, Cream `#F5EDD8`, Gold `#E8C97A`, Ember `#D94F2B`, Field `#639922`), las tipografías de marca (Playfair Display como serif premium para headings y DM Sans para body y UI), referencias de imagen centradas en food appeal y narrativa Km 0, el logotipo final y ejemplos de UX Writing con el claim *"Hamburguesería con alma local. All The Thyme · Km 0"*.
 
 **Herramienta utilizada:** Figma, exportado en PNG a alta resolución. La imagen es apta para presentaciones y documentación técnica.
-> 📂 Recurso: [P3/Moodboard/MoodboardP3.png](P3/Moodboard/MoodboardP3.png)
+> 📂 Recurso: [MoodboardP3.png](P3/Moodboard/MoodboardP3.png)
 
 ---
 
@@ -312,7 +312,7 @@ El moodboard define el sistema visual de **Goiko Experience: Raíces**. Recoge l
 
 El documento de Guidelines recoge las decisiones tomadas sobre los **patrones de interfaz de usuario** que guiarán el prototipado. Se ha definido el sistema completo de componentes: cabecera con navegación sticky y acceso diferenciado B2B, buscador con chips de filtrado (vegano, sin gluten, Km 0, precio), cards de producto con sistema de badges (Edición Limitada, New, Vegana), detalle de producto con lista de trazabilidad de ingredientes, zona B2B con formulario de registro para proveedores, formularios de login y alerta de lanzamiento, carrito con resumen de pedido, botones estándar (Reservar, Ver origen, Suscribirse, Contactar proveedor, Cancelar) y footer estructurado con columnas corporativas.
 
-> 📂 Recurso: [P3/Guidelines/Guidelines_.pdf](P3/Guidelines/Guidelines_.pdf)
+> 📂 Recurso: [Guidelines.pdf](P3/Guidelines/Guidelines_.pdf)
 
 ---
 
@@ -321,7 +321,7 @@ El documento de Guidelines recoge las decisiones tomadas sobre los **patrones de
 
 El mockup es un **prototipo HTML navegable** que pone en acción el sistema visual definido en el moodboard y los patrones recogidos en los guidelines. Permite simular los flujos principales de usuario: exploración de la carta con filtros, consulta del detalle de producto con trazabilidad Km 0, flujo de reserva mediante modal interactivo con calendario y selector de comensales, acceso a la zona B2B para proveedores y gestión del carrito. Está implementado con HTML, CSS y JavaScript vanilla, sin dependencias externas, lo que facilita su distribución y revisión por parte de los stakeholders sin necesidad de herramientas adicionales.
 
-> 📂 Recurso: [P3/Mockup/goiko-mockup.html](P3/Mockup/goiko-mockup.html)
+> 📂 Recurso: [goiko-mockup.html](P3/Mockup/goiko-mockup.html)
 
 ## Paso 4. Pruebas de Evaluación 
 
