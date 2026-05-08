@@ -294,7 +294,6 @@ Se ha utilizado **Figma** para diseñar el layout en baja fidelidad, priorizando
 Los diseños cubren desde la página de productos hasta el perfil del usuario, donde puede consultar sus reservas activas y su historial de canjes.
 ## Paso 3. Mi UX-Case Study (diseño)
 
->>> Cualquier título puede ser adaptado. Recuerda borrar estos comentarios del template en tu documento
 
 
 ### 3.a Moodboard
