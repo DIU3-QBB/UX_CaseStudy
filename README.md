@@ -302,8 +302,7 @@ Los diseños cubren desde la página de productos hasta el perfil del usuario, d
 
 El moodboard define el sistema visual de **Goiko Experience: Raíces**. Recoge la paleta de color (Noir `#1A1209`, Cream `#F5EDD8`, Gold `#E8C97A`, Ember `#D94F2B`, Field `#639922`), las tipografías de marca (Playfair Display como serif premium para headings y DM Sans para body y UI), referencias de imagen centradas en food appeal y narrativa Km 0, el logotipo final y ejemplos de UX Writing con el claim *"Hamburguesería con alma local. All The Thyme · Km 0"*.
 
-**Herramienta utilizada:** Figma, exportado en PNG a alta resolución. La imagen es apta para presentaciones y documentación técnica, pero **no es directamente reutilizable como cabecera de Instagram**: las proporciones del moodboard no se ajustan ni a Stories (1080×1920 px) ni al feed (1080×1080 px). Para redes sociales sería necesario recortar y adaptar cada bloque por separado, priorizando el logotipo, la paleta y el claim como piezas independientes.
-
+**Herramienta utilizada:** Figma, exportado en PNG a alta resolución. La imagen es apta para presentaciones y documentación técnica.
 > 📂 Recurso: [P3/Moodboard/MoodboardP3.png](P3/Moodboard/MoodboardP3.png)
 
 ---
