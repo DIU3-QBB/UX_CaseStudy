@@ -328,66 +328,198 @@ El mockup es un **prototipo HTML navegable** que pone en acción el sistema visu
 **Convocatoria:** Mayo 2026  
 **Grupo:** DIU3_QBB  
 **Proyecto:** Goiko Experience — Raíces (Granada, Km 0)  
-**URL de Producción:** [Introduce aquí tu enlace, ej: https://goiko-raices-qbb.surge.sh]  
-**Repositorio GitHub:** [Introduce aquí el enlace a tu repositorio]  
+**URL de Producción:** [https://www.figma.com/make/YrU8qmWqUjt08Ou5DHuY02/Enviar-archivo?t=c780793uJTFDCQiO-1]  
 
 ---
 
 ## Integrantes del Equipo
-- :bust_in_silhouette: Manuel Gómez Rubio :octocat: [Enlace a GitHub]
-- :bust_in_silhouette: Juan Manuel Jiménez Álvarez :octocat: [Enlace a GitHub]
+- :bust_in_silhouette: Manuel Gómez Rubio 
+- :bust_in_silhouette: Juan Manuel Jiménez Álvarez 
 
 ---
 
-## Briefing del Proceso de Producción
+## 1. Proceso de desarrollo: configuración y migración del diseño molecular
 
-### 1. Elementos de Diseño Mantenidos en el Producto Final
-El desarrollo final de la interfaz preserva estrictamente la dirección de arte y los componentes clave definidos en la fase de prototipado en Figma. Se ha mantenido una paleta cromática sofisticada de alto contraste basada en tonos oscuros y orgánicos (`--noir`, `--card-bg`), un acento vibrante en el botón de conversión principal (`--ember`), y detalles de autenticidad local en verde y oro (`--field`, `--gold`). En cuanto a la arquitectura visual, se ha respetado fielmente el layout responsivo adaptable a dispositivos móviles (mediante *flexbox* y *CSS grid* con funciones `clamp()`), asegurando la consistencia en elementos como la barra de navegación pegajosa (*sticky nav*), el buscador interactivo con filtros (*chips*), las tarjetas de producto con etiquetas dinámicas (*limited*, *vegan*, *new*), el desglose de trazabilidad Km 0 (gráfico de procedencia/distancias), y el modal interactivo de reservas. Los estados interactivos (*hover*, *focus*, transformaciones y animaciones fluidas como el flotado del héroe) ofrecen un *feedback* visual inmediato que enriquece la experiencia del usuario final.
+### Sistema de Diseño Implementado
+Se ha desarrollado un sistema de diseño completo para **Goiko Experience** siguiendo una arquitectura de componentes moleculares con **React** y **Tailwind CSS v4**.
 
-### 2. Proceso de Producción, Problemas y Estrategias
-Para la traslación del diseño molecular a código funcional, se optó por una estrategia híbrida (**Opción 1A + 1C**): la extracción de la estructura base y la semántica CSS directamente desde Figma (aprovechando herramientas de inspección de código y plugins como *Figma to Code*), combinada con una reconstrucción manual modular orientada a Componentes Reactivos para su correcta integración posterior con **React** y **Storybook**. El principal desafío técnico radicó en la conversión del layout monolítico a componentes puros aislados (Átomos, Moléculas y Organismos) garantizando que las variables del sistema de diseño nativo en Figma (`:root` variables) controlaran dinámicamente los estilos CSS encapsulados. Para mitigar los problemas de alcance visual en el refactor a React, se establecieron *props* estrictas en componentes moleculares clave como `BurgerCard` (permitiendo inyectar variantes como `bg-ember`, `bg-field` o estados de etiquetas) y se extrajo la lógica de estados mutables del sistema de reserva (calendario interactivo y contador de comensales) a *hooks* encapsulados fáciles de testear visualmente de forma aislada desde el entorno de Storybook.
+#### Paleta de colores definida
+* `#1A1209 (Noir)` - Color principal de fondo
+* `#F5EDD8 (Cream)` - Color de texto principal
+* `#E8C97A (Gold)` - Color de acento y destacados
+* `#D94F2B (Ember)` - Color de CTAs y acciones principales
+* `#639922 (Field)` - Indicadores Km 0 y elementos veganos
+* `#9C8C6E (Muted)` - Textos secundarios
 
----
+#### Componentes desarrollados
+* **Layout:** Estructura principal con navbar responsive y sticky.
+* **Footer:** Pie de página con enlaces organizados por categorías.
+* **ReservationModal:** Modal de reservas con selección de hamburguesa, calendario dinámico, horarios y comensales.
+* **AlertModal:** Sistema de alertas con opciones de email y WhatsApp.
+* **Páginas completas:** Home (2 versiones de diseño), Km0, Reservas, B2B y Sobre.
 
-## Arquitectura de la Librería de Componentes (Design System)
+#### Tokens de diseño
+* **Tipografía:** *Playfair Display* (serif) para títulos, *DM Sans* para el cuerpo de texto.
+* **Bordes redondeados:** Desde `12px` hasta `32px` según la jerarquía del elemento.
+* **Espaciados consistentes:** Basados en un sistema con una base de `4px`.
+* **Animaciones:** `fade-up`, `float` y transiciones suaves.
 
-La aplicación web se estructura siguiendo la metodología de **Diseño Atómico** (Atomic Design) reflejada en el diseño de Figma y documentada de forma aislada mediante **Storybook**:
-
-### Componentes de Nivel Átomo (Atoms)
-* **`Button`:** Variantes primaria (`btn-primary` en color ember), secundaria (`btn-secondary` con borde dorado), de reserva pequeña/grande y estados deshabilitados.
-* **`Chip`:** Botones de filtro rápido (`🌱 Vegano`, `🌾 Sin Gluten`, `⭐ Edición Limitada`, `📍 Km 0`) con estados activo/inactivo.
-* **`Input` / `Select`:** Campos de texto del buscador y inputs del formulario B2B / autenticación con microinteracciones en `:focus`.
-* **`Badge`:** Etiquetas de estado dinámico superpuestas en las imágenes (`Limited`, `New`, `Vegan`).
-
-### Componentes de Nivel Molécula (Molecules)
-* **`SearchBox`:** Combinación del átomo de entrada con un icono de lupa, sirviendo como núcleo del buscador.
-* **`BurgerCard`:** Componente contenedor que orquesta una imagen de fondo degradado variable (`bg-*`), cabecera de etiquetas, descripción, precio y botones de acción rápida.
-* **`ValueCard`:** Tarjeta de propuesta de valor utilizada en la sección "Sobre Goiko" que unifica icono, titular dorado y párrafo descriptivo.
-* **`CalendarDay` / `TimeSlot`:** Bloques unitarios para la matriz del calendario del modal, gestionando estados `selected` y `disabled`.
-
-### Componentes de Nivel Organismo (Organisms)
-* **`Navbar`:** Barra superior persistente con logotipo tipográfico con serifas (*Playfair Display*), enlaces de navegación y botón de llamada a la acción (CTA).
-* **`ProductDetail`:** Módulo de visualización detallada que incluye la lista de ingredientes con cálculo interactivo de distancia de trazabilidad (*Km 0*).
-* **`B2BForm` / `AuthForms`:** Formularios agrupados en tarjetas para el registro de productores locales y gestión de alertas / login de usuarios.
-* **`Cart`:** Desglose dinámico de compra que acumula productos, calcula precios adicionales por ingredientes extra y procesa el total.
-* **`ReservationModal`:** Capa de diálogo flotante (*overlay*) reactiva que integra el organismo del calendario y los controladores de selección horaria y comensales.
+### Metodología
+Se aplicó la metodología de **diseño atómico** con componentes reutilizables y modulares. Esto permitió crear dos implementaciones visuales totalmente distintas utilizando los mismos componentes base:
+1. Diseño clásico centrado.
+2. Diseño moderno con pantalla dividida (*split-screen*).
 
 ---
 
-## Despliegue y Configuración
+## 2. WebApp publicada
 
-### Requisitos Previos e Instalación
-Para levantar el entorno local de desarrollo de componentes con React y Storybook, clona este repositorio y ejecuta:
+* **Estado de publicación:** Completamente funcional y desplegada.
+* **URL de acceso:** *[Tu URL de Figma Make aquí]*
 
-```bash
-# Instalar las dependencias del proyecto
-npm install
+### Funcionalidades implementadas
 
-# Iniciar la aplicación web en entorno local (React)
-npm run start
+#### Navegación
+* Sistema de rutas estructurado con **React Router DOM**.
+* **5 páginas principales:** Home, Km 0, Reservas, B2B y Sobre.
+* Navbar tipo *sticky* que detecta automáticamente la sección activa.
+* Menú móvil responsive con botón de hamburguesa (*hamburger menu*).
+* Desplazamiento (*scroll*) suave entre las distintas secciones.
 
-# Lanzar el entorno de documentación aislado de Storybook
-npm run storybook 
+#### Sistema de búsqueda y filtrado
+* Búsqueda en tiempo real filtrando por nombre de plato e ingredientes.
+* Filtros múltiples con operadores lógicos **AND** (Vegano, Sin gluten, Edición limitada, Km 0).
+* Contador dinámico que muestra el número de resultados en tiempo real.
+* Pantalla de estado vacío con opción directa para limpiar los filtros aplicados.
+
+#### Sistema de reservas
+* Modal de reservas integrado que permite seleccionar una hamburguesa específica.
+* Calendario dinámico con sistema de navegación mensual.
+* Validación de fechas (bloquea el pasado y solo permite reservas futuras).
+* Selector inteligente de horarios disponibles.
+* Control para el número de comensales (permitido de 1 a 12 personas).
+* Integración y acceso al formulario desde múltiples puntos clave de la aplicación.
+
+#### Trazabilidad Km 0
+* Desplegables interactivos para conocer los detalles de cada ingrediente.
+* Documentación e historias de **4 proveedores locales**.
+* Cálculo y visualización de la distancia exacta hasta cada proveedor.
+* Ficha con las características especiales de cada producto.
+* Enlaces directos a las ubicaciones reales en el mapa.
+
+#### Sistema de alertas
+* Modal dedicado a la suscripción de notificaciones de nuevos lanzamientos.
+* Selección del canal de comunicación preferido: Email, WhatsApp o ambos.
+* Formulario completamente validado con mensajes de confirmación visual.
+* Texto informativo sobre el contenido y frecuencia de las alertas.
+
+#### Responsive Design
+* Adaptación completa de la interfaz bajo la filosofía **mobile-first**.
+* **Breakpoints definidos:**
+  * Móvil: `< 768px`
+  * Tablet: `768px - 1024px`
+  * Escritorio: `> 1024px`
+* Elementos de navegación adaptados según el dispositivo de acceso.
+* Optimización de imágenes para cada resolución.
+
+#### Rendimiento
+* Integración e indexación de imágenes de alta calidad optimizadas desde Unsplash.
+* Implementación de *lazy loading* (carga perezosa) en los componentes.
+* Transiciones CSS optimizadas para asegurar fluidez.
+* Código limpio libre de dependencias innecesarias.
+
+---
+
+## 3. Documentación de componentes y briefing
+
+### Briefing del proyecto
+
+* **Nombre:** Goiko Experience: Raíces
+* **Concepto:** Hamburguesería premium con enfoque en ingredientes Km 0 provenientes de proveedores locales de Granada. Cada mes se diseña y lanza una edición limitada en colaboración con artesanos de proximidad.
+
+#### Propuesta de valor
+* El 100% de los ingredientes principales se producen a menos de 50 km de distancia.
+* Trazabilidad completa y abierta de cada ingrediente.
+* Lanzamientos exclusivos de ediciones limitadas mensuales.
+* Apoyo e impulso a la economía de los productores locales.
+* Transparencia total sobre el origen de los alimentos.
+
+#### Público objetivo
+* Consumidores conscientes e informados de entre 25 y 45 años.
+* Personas interesadas en la alimentación sostenible y el comercio justo.
+* Usuarios que valoran activamente la trazabilidad y la calidad de lo que consumen.
+* Clientes dispuestos a pagar un precio premium por un producto local garantizado.
+
+#### Tono de comunicación
+* Cercano pero con un carácter marcadamente premium.
+* Transparente, honesto y directo.
+* Basado en el *storytelling* enfocado en la vida e historia de los productores.
+* Elegante y cuidado, evitando caer en lo pretencioso.
+
+---
+
+### Documentación de componentes
+
+#### Layout Component
+* **Propósito:** Actúa como la estructura principal de la interfaz y controla la navegación.
+* **Props:** `onOpenReservation` (función)
+* **Características:** Navbar de tipo *sticky*, menú adaptativo para móviles y detector de ruta activa.
+* **Estados internos:**
+  * `isMenuOpen` (controla la apertura del menú móvil)
+  * `isScrolled` (modifica el estilo visual de la navbar al hacer scroll)
+
+#### ReservationModal Component
+* **Propósito:** Gestión y tramitación del proceso de reservas de mesas.
+* **Props:** `isOpen`, `onClose`, `selectedBurger` (opcional)
+* **Características:** Calendario dinámico multi-mes, preselección de hamburguesa y validación nativa de fechas.
+* **Estados internos:** `selectedDay`, `selectedTime`, `guests`, `burger`, `currentMonth`, `currentYear`.
+
+#### AlertModal Component
+* **Propósito:** Permite a los usuarios suscribirse a las alertas de las nuevas ediciones mensuales.
+* **Props:** `isOpen`, `onClose`, `productName`
+* **Características:** Selector de canal de comunicación (email/WhatsApp), validación de inputs y feedback visual de confirmación.
+* **Estados internos:** `selectedMethod`, `email`, `whatsapp`, `isSubmitted`.
+
+#### Footer Component
+* **Propósito:** Agrupa la navegación secundaria, datos de contacto y temas legales.
+* **Props:** `onOpenReservation`
+* **Características:** Maquetación mediante un *grid* responsive con enlaces ordenados por categorías temáticas.
+
+#### Home Page
+* **Características:** Pantalla de bienvenida con formato *hero split-screen*, barra de búsqueda de tipo *sticky*, cuadrícula principal de hamburguesas y sección destacada con llamada a la acción (CTA).
+* **Funcionalidades:** Búsqueda predictiva en tiempo real, arquitectura de filtros múltiples AND y sistema de navegación hacia las fichas de detalle.
+
+#### Km0 Page
+* **Características:** Vista en detalle del producto junto a un sistema de menús desplegables para los ingredientes.
+* **Funcionalidades:** Sistema interactivo de acordeones, relatos y crónicas de los proveedores locales y acceso al sistema de alertas.
+
+---
+
+### Data Structure
+
+```typescript
+interface Burger {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  badge: string;
+  badgeStyle: string;
+  tags: string[];
+}
+
+interface Ingredient {
+  id: string;
+  emoji: string;
+  name: string;
+  supplier: string;
+  distance: string;
+  color: string;
+  story: string;
+  details: string[];
+}
+```
+
 ## Paso 4. Pruebas de Evaluación 
 
 ### 4.a Reclutamiento de usuarios 
