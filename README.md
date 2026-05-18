@@ -334,8 +334,8 @@ El mockup es un **prototipo HTML navegable** que pone en acción el sistema visu
 ---
 
 ## Integrantes del Equipo
-* [Nombre del Integrante 1] - [Email/GitHub]
-* [Nombre del Integrante 2] - [Email/GitHub]
+- :bust_in_silhouette: Manuel Gómez Rubio :octocat: [Enlace a GitHub]
+- :bust_in_silhouette: Juan Manuel Jiménez Álvarez :octocat: [Enlace a GitHub]
 
 ---
 
