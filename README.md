@@ -328,7 +328,7 @@ El mockup es un **prototipo HTML navegable** que pone en acción el sistema visu
 **Convocatoria:** Mayo 2026  
 **Grupo:** DIU3_QBB  
 **Proyecto:** Goiko Experience — Raíces (Granada, Km 0)  
-**URL de Producción:** [https://www.figma.com/make/YrU8qmWqUjt08Ou5DHuY02/Enviar-archivo?t=c780793uJTFDCQiO-1]  
+**URL de Producción:** https://wide-lock-50038686.figma.site  
 
 ---
 
