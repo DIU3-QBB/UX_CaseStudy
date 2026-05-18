@@ -322,72 +322,72 @@ El mockup es un **prototipo HTML navegable** que pone en acción el sistema visu
 
 > 📂 Recurso: [goiko-mockup.html](P3/Mockup/goiko-mockup.html)
 
-PRÁCTICA 4: COMPONENTES UI
+# Práctica 4: Componentes UI y Documentación (Storybook)
 
-Diseño Interfaces de Usuario, 2026 (==actualizado mayo 2026==)
+**Asignatura:** Diseño de Interfaces de Usuario (DIU)  
+**Convocatoria:** Mayo 2026  
+**Grupo:** DIU3_QBB  
+**Proyecto:** Goiko Experience — Raíces (Granada, Km 0)  
+**URL de Producción:** [Introduce aquí tu enlace, ej: https://goiko-raices-qbb.surge.sh]  
+**Repositorio GitHub:** [Introduce aquí el enlace a tu repositorio]  
 
-Nº Sesiones: 2
+---
 
-<Volver Guiones Prácticas alt
-Objetivo:
+## Integrantes del Equipo
+* [Nombre del Integrante 1] - [Email/GitHub]
+* [Nombre del Integrante 2] - [Email/GitHub]
 
-En esta práctica vamos a exportar el diseño (realizado en Figma) a una aplicacion web y usaremos estándares de documentación de la librería de componentes del UI. Para ello usaremos como framework React y usaremos la extensión Storybook para la documentarlos.
-Planteamiento revisado:
+---
 
-Vamos a plantear varias alternativas en las que podriamos empezar con preparar el entorno de producción.
-[1A Crear APP REACT]
+## Briefing del Proceso de Producción
 
-El siguiente paso es migrar el contenido de Figma a React. Hay varias maneras de realizarlo.
+### 1. Elementos de Diseño Mantenidos en el Producto Final
+El desarrollo final de la interfaz preserva estrictamente la dirección de arte y los componentes clave definidos en la fase de prototipado en Figma. Se ha mantenido una paleta cromática sofisticada de alto contraste basada en tonos oscuros y orgánicos (`--noir`, `--card-bg`), un acento vibrante en el botón de conversión principal (`--ember`), y detalles de autenticidad local en verde y oro (`--field`, `--gold`). En cuanto a la arquitectura visual, se ha respetado fielmente el layout responsivo adaptable a dispositivos móviles (mediante *flexbox* y *CSS grid* con funciones `clamp()`), asegurando la consistencia en elementos como la barra de navegación pegajosa (*sticky nav*), el buscador interactivo con filtros (*chips*), las tarjetas de producto con etiquetas dinámicas (*limited*, *vegan*, *new*), el desglose de trazabilidad Km 0 (gráfico de procedencia/distancias), y el modal interactivo de reservas. Los estados interactivos (*hover*, *focus*, transformaciones y animaciones fluidas como el flotado del héroe) ofrecen un *feedback* visual inmediato que enriquece la experiencia del usuario final.
 
-    Inspeccionando en DEV MODE e inspeccionando contenido a entorno React
-    Usaremos algún tipo de plugin usando algún plugin de Figma: Figma to code, locofy, Anima…
+### 2. Proceso de Producción, Problemas y Estrategias
+Para la traslación del diseño molecular a código funcional, se optó por una estrategia híbrida (**Opción 1A + 1C**): la extracción de la estructura base y la semántica CSS directamente desde Figma (aprovechando herramientas de inspección de código y plugins como *Figma to Code*), combinada con una reconstrucción manual modular orientada a Componentes Reactivos para su correcta integración posterior con **React** y **Storybook**. El principal desafío técnico radicó en la conversión del layout monolítico a componentes puros aislados (Átomos, Moléculas y Organismos) garantizando que las variables del sistema de diseño nativo en Figma (`:root` variables) controlaran dinámicamente los estilos CSS encapsulados. Para mitigar los problemas de alcance visual en el refactor a React, se establecieron *props* estrictas en componentes moleculares clave como `BurgerCard` (permitiendo inyectar variantes como `bg-ember`, `bg-field` o estados de etiquetas) y se extrajo la lógica de estados mutables del sistema de reserva (calendario interactivo y contador de comensales) a *hooks* encapsulados fáciles de testear visualmente de forma aislada desde el entorno de Storybook.
 
-Info: https://developers.figma.com/docs/code/
+---
 
-Info: https://uxplanet.org/turn-figma-design-into-code-loveable-vs-anima-f37d301b7a5d
+## Arquitectura de la Librería de Componentes (Design System)
 
-https://medium.com/@dinothan1/figma-design-guidelines-used-to-generate-better-code-with-locofy-ai-4d098305b3d5
-[1B Partiendo de FIGMA MAKE]
+La aplicación web se estructura siguiendo la metodología de **Diseño Atómico** (Atomic Design) reflejada en el diseño de Figma y documentada de forma aislada mediante **Storybook**:
 
-Desde el prototípo usamos el diseño como ayuda para usar IA con FIGMA MAKE
+### Componentes de Nivel Átomo (Atoms)
+* **`Button`:** Variantes primaria (`btn-primary` en color ember), secundaria (`btn-secondary` con borde dorado), de reserva pequeña/grande y estados deshabilitados.
+* **`Chip`:** Botones de filtro rápido (`🌱 Vegano`, `🌾 Sin Gluten`, `⭐ Edición Limitada`, `📍 Km 0`) con estados activo/inactivo.
+* **`Input` / `Select`:** Campos de texto del buscador y inputs del formulario B2B / autenticación con microinteracciones en `:focus`.
+* **`Badge`:** Etiquetas de estado dinámico superpuestas en las imágenes (`Limited`, `New`, `Vegan`).
 
-    Conectamos diseño con Figma Make
+### Componentes de Nivel Molécula (Molecules)
+* **`SearchBox`:** Combinación del átomo de entrada con un icono de lupa, sirviendo como núcleo del buscador.
+* **`BurgerCard`:** Componente contenedor que orquesta una imagen de fondo degradado variable (`bg-*`), cabecera de etiquetas, descripción, precio y botones de acción rápida.
+* **`ValueCard`:** Tarjeta de propuesta de valor utilizada en la sección "Sobre Goiko" que unifica icono, titular dorado y párrafo descriptivo.
+* **`CalendarDay` / `TimeSlot`:** Bloques unitarios para la matriz del calendario del modal, gestionando estados `selected` y `disabled`.
 
-    Refinamos usando IA
+### Componentes de Nivel Organismo (Organisms)
+* **`Navbar`:** Barra superior persistente con logotipo tipográfico con serifas (*Playfair Display*), enlaces de navegación y botón de llamada a la acción (CTA).
+* **`ProductDetail`:** Módulo de visualización detallada que incluye la lista de ingredientes con cálculo interactivo de distancia de trazabilidad (*Km 0*).
+* **`B2BForm` / `AuthForms`:** Formularios agrupados en tarjetas para el registro de productores locales y gestión de alertas / login de usuarios.
+* **`Cart`:** Desglose dinámico de compra que acumula productos, calcula precios adicionales por ingredientes extra y procesa el total.
+* **`ReservationModal`:** Capa de diálogo flotante (*overlay*) reactiva que integra el organismo del calendario y los controladores de selección horaria y comensales.
 
-    Info: https://www.figma.com/solutions/ai-component-documentation-generator/
+---
 
-    info: https://medium.com/ai-product-forge/11-figma-make-hacks-to-build-smarter-faster-and-better-products-8bc155ff1be2
+## Despliegue y Configuración
 
-[1C Generando directamente en React]
+### Requisitos Previos e Instalación
+Para levantar el entorno local de desarrollo de componentes con React y Storybook, clona este repositorio y ejecuta:
 
-Crear directamente en React los átomos y moléculas y posteriormente incorporar los aspectos de estilo visual. Se puede combinar con otras estrategias, como utilizar bibliotecas de componentes UI como shadcnUI, DaisyUI... y personalizarlos
+```bash
+# Instalar las dependencias del proyecto
+npm install
 
-Info: https://www.untitledui.com/, https://developers.figma.com/docs/code/working-with-react/
-[2 Versión Web en PRODUCCIÓN ]
+# Iniciar la aplicación web en entorno local (React)
+npm run start
 
-Se recomienta usar algun servidor como Surge.sh para publicar contenido y tener un enlace para su evaluación. Asimismo, se puede subir el contenido al repositorio. Figma Make tiene su propio sitio de alojamiento.
-[3 BRIEFING ]
-
-Documentacion (2 - 3 párrafos) de los pasos y aspectos destacables de este proceso
-
-    Descripción de los elementos de diseño inicialmente se han mantenido en producto final (estilos, layout, estados, …)
-
-    Descripción del proceso de producción elegido, problemas detectados (según opción elegida) y estrategias adoptadas.
-
-DOCUMENTACIÓN A ENTREGAR
-
-Se debe entregar el proyecto en un fichero comprimido ZIP. 
-
-    Datos identificativos  del equipo
-
-Entregables de la práctica: 
-
-    Proceso de desarrollo: configuración y migración del diseño molecular (60%) 
-    WebApp publicada (30%)
-    Documentacion de componentes y briefing (30%)
-
-El fichero se llamará {nombre_equipo}_P4, donde grupo: {DIU1, DIU2, DIU3}  se debe además publicar en GITHUB los resultados. 
+# Lanzar el entorno de documentación aislado de Storybook
+npm run storybook 
 ## Paso 4. Pruebas de Evaluación 
 
 ### 4.a Reclutamiento de usuarios 
