@@ -5,7 +5,7 @@ Prácticas Diseño Interfaces de Usuario (Tema: .... )
 * [Guía para crea tu Case Study](Guia_CaseStudy.md)
 * Sala de la Fama [DIU Hall of fame](https://github.com/mgea/DIU/tree/master/hall_of_fame) donde se pueden encontrar Case Study destacados de otros años.
 
-
+* Web Funcional: https://wide-lock-50038686.figma.site 
 
 
 Actualizado: 14/01/2026
@@ -374,7 +374,7 @@ Se aplicó la metodología de **diseño atómico** con componentes reutilizables
 ## 2. WebApp publicada
 
 * **Estado de publicación:** Completamente funcional y desplegada.
-* **URL de acceso:** *[Tu URL de Figma Make aquí]*
+* **URL de acceso:** https://wide-lock-50038686.figma.site 
 
 ### Funcionalidades implementadas
 
