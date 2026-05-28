@@ -520,13 +520,13 @@ interface Ingredient {
 }
 ```
 
-## Pruebas de Evaluación 
+## Pruebas de Evaluació - P5
 
 Este apartado recoge la planificación de pruebas de usuario, la ejecución del estudio experimental experimental entre-sujetos (**A/B Testing**), la captura biométrica de datos mediante rastreo ocular (**Eye Tracking**) y la auditoría final de la interfaz asignada.
 
 ---
 
-## 4.a Reclutamiento de Usuarios
+## 5.a Reclutamiento de Usuarios
 
 ### Descripción del Caso Asignado (Caso B)
 Evaluamos la propuesta interactiva de la cafetería de especialidad **Wax & Wayne**, analizando su arquitectura de información, catálogo comercial y el flujo de conversión final del sistema para localizar cuellos de botella e inconsistencias críticas.
@@ -544,7 +544,7 @@ Para el experimento se seleccionó una muestra controlada y contrabalanceada. A 
 
 ---
 
-## 4.b Diseño de las Pruebas
+## 5.b Diseño de las Pruebas
 
 El estudio experimental se diseñó bajo una metodología controlada de laboratorio basándose en la ejecución de tres misiones secuenciales críticas:
 1. **Tarea 1 (T01) - Exploración Visual Pasiva:** Inspección libre de la Landing Page durante 10 segundos para medir el impacto visual y el reconocimiento de la propuesta de valor.
@@ -555,7 +555,7 @@ El estudio experimental se diseñó bajo una metodología controlada de laborato
 
 ---
 
-## 4.c Cuestionario SUS (System Usability Scale)
+## 5.c Cuestionario SUS (System Usability Scale)
 
 Como métrica psicométrica de percepción subjetiva, administramos el cuestionario SUS estandarizado a la muestra completa de usuarios tras finalizar sus tareas. 
 
@@ -567,7 +567,7 @@ Los datos recopilados muestran un escenario asimétrico radical. Mientras que el
 
 ---
 
-## 4.d A/B Testing
+## 5.d A/B Testing
 
 Cruzando los datos agregados de rendimiento y tasa de éxito en las misiones planteadas, el veredicto del análisis multivariable es concluyente:
 
@@ -582,7 +582,7 @@ Cruzando los datos agregados de rendimiento y tasa de éxito en las misiones pla
 
 ---
 
-## 4.e Aplicación del Método Eye Tracking
+## 5.e Aplicación del Método Eye Tracking
 
 Para el análisis biométrico del **Caso B**, modelamos las sesiones de rastreo ocular utilizando algoritmos basados en web a través de la API de captación visual de *GazeRecorder*. 
 
@@ -596,7 +596,7 @@ Aquí se expone un ejemplo del mapa de calor consolidado durante la navegación 
 
 ---
 
-## 4.f Usability & Accessibility Report de B
+## 5.f Usability & Accessibility Report de B
 
 La auditoría formal de usabilidad y el análisis de cumplimiento normativo según las pautas de la norma **WCAG 2.2 AA (UNE-EN 301549)** han sido debidamente estructurados e integrados en sus correspondientes actas técnicas.
 
