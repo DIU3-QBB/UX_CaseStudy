@@ -600,8 +600,8 @@ Aquí se expone un ejemplo del mapa de calor consolidado durante la navegación 
 
 La auditoría formal de usabilidad y el análisis de cumplimiento normativo según las pautas de la norma **WCAG 2.2 AA (UNE-EN 301549)** han sido debidamente estructurados e integrados en sus correspondientes actas técnicas.
 
-* 📄 [Ver Informe de Usabilidad Detallado (Usability-Report-template.md)](../P5/Usability-Report.md)
-* ♿ [Ver Auditoría de Accesibilidad POUR (Accessibility-Report-template.md)](../P5/Acceibility-Report.md)
+* 📄 [Ver Informe de Usabilidad Detallado (Usability-Report.md)](P5/Usability-Report.md)
+* ♿ [Ver Auditoría de Accesibilidad POUR (Accessibility-Report.md)](/P5/Acceibility-Report.md)
 
 ### Valoración Personal del Equipo sobre la Tarea 4
 La ejecución de este bloque metodológico ha sido reveladora para el equipo. Nos ha permitido experimentar de primera mano cómo una interfaz con un apartado gráfico inicial prometedor y moderno (como es el caso de la web de nuestros compañeros) puede quedar completamente inutilizada en términos de negocio debido a descuidos en el desarrollo del código subyacente (enlaces vacíos) y a la ausencia de elementos de interacción básicos (filtros o buscadores). 
