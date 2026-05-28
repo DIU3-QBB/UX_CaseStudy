@@ -537,10 +537,10 @@ Para el experimento se seleccionó una muestra controlada y contrabalanceada. A 
 
 | Usuario | Sexo / Edad | Ocupación | Exp. TIC | Personalidad | Plataforma | Caso Asignado | Posible Situación Conflictiva / Frustración Esperada |
 | :---: | :---: | :--- | :---: | :--- | :---: | :---: | :--- |
-| **P01 (Mateo)** | H / 18 | Estudiante | Media | Introvertido | Web | **Caso A (Raíces)** | Puede abrumarse si la interfaz utiliza un lenguaje excesivamente comercial o flujos invasivos de registro. |
-| **P02 (Laura)** | H / 18 | Estudiante | Media | Tímido | Web | **Caso A (Raíces)** | Reticencia a completar pasos si el sistema requiere interactuar con mapas o widgets externos ambiguos. |
-| **P03 (Elena)** | M / 35 | Abogado | Baja | Emocional | Móvil | **Caso B (Wax&Wayne)** | Alta tolerancia a la frustración muy baja; si el layout móvil quiebra o no hay feedback claro, abandonará la web. |
-| **P04 (Carlos)** | H / 18 | Estudiante | Media | Racional | Web | **Caso B (Wax&Wayne)** | Detectará de inmediato fallos lógicos en el código o enlaces rotos, penalizando la credibilidad de la marca. |
+| **P01** | H / 18 | Estudiante | Media | Introvertido | Web | **Caso A (Raíces)** | Puede abrumarse si la interfaz utiliza un lenguaje excesivamente comercial o flujos invasivos de registro. |
+| **P02** | H / 18 | Estudiante | Media | Tímido | Web | **Caso A (Raíces)** | Reticencia a completar pasos si el sistema requiere interactuar con mapas o widgets externos ambiguos. |
+| **P03** | M / 35 | Abogado | Baja | Emocional | Móvil | **Caso B (Wax&Wayne)** | Alta tolerancia a la frustración muy baja; si el layout móvil quiebra o no hay feedback claro, abandonará la web. |
+| **P04** | H / 18 | Estudiante | Media | Racional | Web | **Caso B (Wax&Wayne)** | Detectará de inmediato fallos lógicos en el código o enlaces rotos, penalizando la credibilidad de la marca. |
 
 ---
 
