@@ -561,6 +561,7 @@ Como métrica psicométrica de percepción subjetiva, administramos el cuestiona
 
 * **Resultados Numéricos:** La hoja de cálculo parametrizada con las puntuaciones individuales, medias ponderadas y grados lingüísticos resultantes se encuentra depositada en el directorio de trabajo del proyecto.
 * **Archivo de Datos:** 📊 [Consultar Tabla de Datos Excel Completa (DIU3_QBB_P5.xlsx)](P5/DIU3_QBB_P5.xlsx)
+* **Archivo de Datos:** 📊 [Consultar Tabla de Datos Excel Completa (DIU3_QBB_P5.pdf)](P5/DIU3_QBB_P5.pdf)
 
 ### Valoración Personal de los Resultados
 Los datos recopilados muestran un escenario asimétrico radical. Mientras que el **Caso A (Raíces)** se consolida en una franja excelente (**84.00/100 - Grado A**), demostrando fluidez y confianza, el **Caso B (Wax & Wayne)** se desploma hasta una media crítica e inaceptable de **31.07/100 (Grado F)**. Esta baja puntuación es el reflejo directo de la profunda frustración de los usuarios al enfrentarse a un sistema que no responde a sus acciones básicas de navegación.
