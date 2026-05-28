@@ -560,7 +560,7 @@ El estudio experimental se diseñó bajo una metodología controlada de laborato
 Como métrica psicométrica de percepción subjetiva, administramos el cuestionario SUS estandarizado a la muestra completa de usuarios tras finalizar sus tareas. 
 
 * **Resultados Numéricos:** La hoja de cálculo parametrizada con las puntuaciones individuales, medias ponderadas y grados lingüísticos resultantes se encuentra depositada en el directorio de trabajo del proyecto.
-* **Archivo de Datos:** 📊 [Consultar Tabla de Datos Excel Completa (DIU3_QBB_P5.xlsx)](../P5/DIU3_QBB_P5.xlsx)
+* **Archivo de Datos:** 📊 [Consultar Tabla de Datos Excel Completa (DIU3_QBB_P5.xlsx)](P5/DIU3_QBB_P5.xlsx)
 
 ### Valoración Personal de los Resultados
 Los datos recopilados muestran un escenario asimétrico radical. Mientras que el **Caso A (Raíces)** se consolida en una franja excelente (**84.00/100 - Grado A**), demostrando fluidez y confianza, el **Caso B (Wax & Wayne)** se desploma hasta una media crítica e inaceptable de **31.07/100 (Grado F)**. Esta baja puntuación es el reflejo directo de la profunda frustración de los usuarios al enfrentarse a un sistema que no responde a sus acciones básicas de navegación.
@@ -590,7 +590,7 @@ Para el análisis biométrico del **Caso B**, modelamos las sesiones de rastreo 
 
 Aquí se expone un ejemplo del mapa de calor consolidado durante la navegación libre de la muestra:
 
-![Mapa de Calor - Eye Tracking Caso B](./EyeTracking/analisis1.1.jpg)
+![Mapa de Calor - Eye Tracking Caso B](P5/EyeTracking)
 
 * **Análisis de Fijación Directa:** El mapa biométrico corrobora que, aunque el logotipo y las imágenes principales logran un anclaje visual inicial correcto (puntos de calor concentrados), la posterior trayectoria de lectura del ojo quiebra debido a la inconsistencia tipográfica, generando zonas de silencio visual absoluto sobre los textos densos y un patrón de búsqueda errático al toparse con el botón inactivo de reservas.
 
