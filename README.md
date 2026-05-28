@@ -520,74 +520,93 @@ interface Ingredient {
 }
 ```
 
-## Paso 4. Pruebas de Evaluación 
+## Pruebas de Evaluación 
 
-### 4.a Reclutamiento de usuarios 
-![Método UX](img/usability-testing.png)
------
+Este apartado recoge la planificación de pruebas de usuario, la ejecución del estudio experimental experimental entre-sujetos (**A/B Testing**), la captura biométrica de datos mediante rastreo ocular (**Eye Tracking**) y la auditoría final de la interfaz asignada.
 
->>> Breve descripción del caso asignado (llamado Caso-B) con enlace al repositorio Github
->>> Tabla y asignación de personas ficticias (o reales) a las pruebas. Exprese las ideas de posibles situaciones conflictivas de esa persona en las propuestas evaluadas. Mínimo 4 usuarios: asigne 2 al Caso A y 2 al caso B.
+---
 
+## 4.a Reclutamiento de Usuarios
 
+### Descripción del Caso Asignado (Caso B)
+Evaluamos la propuesta interactiva de la cafetería de especialidad **Wax & Wayne**, analizando su arquitectura de información, catálogo comercial y el flujo de conversión final del sistema para localizar cuellos de botella e inconsistencias críticas.
+* **Enlace al repositorio evaluado:** [GitHub Wax & Wayne](https://github.com/andrescabrera-ugr/Wax_Wayne)
 
-| Usuarios | Sexo/Edad     | Ocupación   |  Exp.TIC    | Personalidad | Plataforma | Caso
-| ------------- | -------- | ----------- | ----------- | -----------  | ---------- | ----
-| User1's name  | H / 18   | Estudiante  | Media       | Introvertido | Web.       | A 
-| User2's name  | H / 18   | Estudiante  | Media       | Timido       | Web        | A 
-| User3's name  | M / 35   | Abogado     | Baja        | Emocional    | móvil      | B 
-| User4's name  | H / 18   | Estudiante  | Media       | Racional     | Web        | B 
+### Matriz de Reclutamiento e Hipótesis de Conflicto
+Para el experimento se seleccionó una muestra controlada y contrabalanceada. A continuación se detallan 4 de los usuarios de la muestra original y las situaciones de fricción esperadas según su perfil:
 
+| Usuario | Sexo / Edad | Ocupación | Exp. TIC | Personalidad | Plataforma | Caso Asignado | Posible Situación Conflictiva / Frustración Esperada |
+| :---: | :---: | :--- | :---: | :--- | :---: | :---: | :--- |
+| **P01 (Mateo)** | H / 18 | Estudiante | Media | Introvertido | Web | **Caso A (Raíces)** | Puede abrumarse si la interfaz utiliza un lenguaje excesivamente comercial o flujos invasivos de registro. |
+| **P02 (Laura)** | H / 18 | Estudiante | Media | Tímido | Web | **Caso A (Raíces)** | Reticencia a completar pasos si el sistema requiere interactuar con mapas o widgets externos ambiguos. |
+| **P03 (Elena)** | M / 35 | Abogado | Baja | Emocional | Móvil | **Caso B (Wax&Wayne)** | Alta tolerancia a la frustración muy baja; si el layout móvil quiebra o no hay feedback claro, abandonará la web. |
+| **P04 (Carlos)** | H / 18 | Estudiante | Media | Racional | Web | **Caso B (Wax&Wayne)** | Detectará de inmediato fallos lógicos en el código o enlaces rotos, penalizando la credibilidad de la marca. |
 
-### 4.b Diseño de las pruebas 
-![Método UX](img/usability-testing.png) 
------
+---
 
->>> Planifique qué pruebas se van a desarrollar. ¿En qué consisten? ¿Se hará uso del checklist de la P1?
+## 4.b Diseño de las Pruebas
 
+El estudio experimental se diseñó bajo una metodología controlada de laboratorio basándose en la ejecución de tres misiones secuenciales críticas:
+1. **Tarea 1 (T01) - Exploración Visual Pasiva:** Inspección libre de la Landing Page durante 10 segundos para medir el impacto visual y el reconocimiento de la propuesta de valor.
+2. **Tarea 2 (T02) - Búsqueda Crítica de Producto:** Localizar un artículo gourmet específico en el catálogo, validar su coste de mercado e identificar posibles alérgenos.
+3. **Tarea 3 (T03) - Conversión Final (Reserva):** Intentar formalizar de forma efectiva una reserva de mesa para un grupo de comensales.
 
+* **Uso del Checklist de la P1:** Sí, se aplicó el marco pericial del checklist heurístico para contrastar los bloqueos detectados en el rendimiento de las misiones frente a las pautas estándar de usabilidad.
 
-### 4.c Cuestionario SUS
-![Método UX](img/Survey.png) 
-----
+---
 
->>> Como uno de los test para la prueba A/B testing, usaremos el **Cuestionario SUS** que permite valorar la satisfacción de cada usuario con el diseño utilizado (casos A o B). Para calcular la valoración numérica y la etiqueta linguistica resultante usamos la [hoja de cálculo](https://github.com/mgea/DIU19/blob/master/Cuestionario%20SUS%20DIU.xlsx). Previamente conozca en qué consiste la escala SUS y cómo se interpretan sus resultados
-http://usabilitygeek.com/how-to-use-the-system-usability-scale-sus-to-evaluate-the-usability-of-your-website/)
-Para más información, consultar aquí sobre la [metodología SUS](https://cui.unige.ch/isi/icle-wiki/_media/ipm:test-suschapt.pdf)
->>> Adjuntar en la carpeta P4/ el excel resultante y describa aquí la valoración personal de los resultados 
+## 4.c Cuestionario SUS (System Usability Scale)
 
+Como métrica psicométrica de percepción subjetiva, administramos el cuestionario SUS estandarizado a la muestra completa de usuarios tras finalizar sus tareas. 
 
-### 4.d A/B Testing
-![Método UX](img/ABtesting.png) 
------
+* **Resultados Numéricos:** La hoja de cálculo parametrizada con las puntuaciones individuales, medias ponderadas y grados lingüísticos resultantes se encuentra depositada en el directorio de trabajo del proyecto.
+* **Archivo de Datos:** 📊 [Consultar Tabla de Datos Excel Completa (DIU3_QBB_P5.xlsx)](../P5/DIU3_QBB_P5.xlsx)
 
->>> Los resultados de un A/B testing con 3 pruebas y 2 casos o alternativas daría como resultado una tabla de 3 filas y 2 columnas, además de un resultado agregado global. Especifique con claridad el resultado: qué caso es más usable, A o B?
+### Valoración Personal de los Resultados
+Los datos recopilados muestran un escenario asimétrico radical. Mientras que el **Caso A (Raíces)** se consolida en una franja excelente (**84.00/100 - Grado A**), demostrando fluidez y confianza, el **Caso B (Wax & Wayne)** se desploma hasta una media crítica e inaceptable de **31.07/100 (Grado F)**. Esta baja puntuación es el reflejo directo de la profunda frustración de los usuarios al enfrentarse a un sistema que no responde a sus acciones básicas de navegación.
 
-### 4.e Aplicación del método Eye Tracking 
-![Método UX](img/eye-tracking.png)
-----
+---
 
->>> Indica cómo se diseña el experimento y se reclutan los usuarios. Explica la herramienta / uso de gazerecorder.com u otra similar. Aplíquese únicamente al caso B.
+## 4.d A/B Testing
 
+Cruzando los datos agregados de rendimiento y tasa de éxito en las misiones planteadas, el veredicto del análisis multivariable es concluyente:
 
-![experimento](img/experimentoET.png)  
->>> Cambiar esta img por una de vuestro experimento. El recurso deberá estar subido a la carpeta P4/  
+| Misión Evaluada | Rendimiento Caso A (Raíces) | Rendimiento Caso B (Wax & Wayne) |
+| :--- | :---: | :---: |
+| **T01: Descubrimiento y Home** | 🟢 100% Éxito (Navegación Fluida) | 🟡 100% Éxito con detalles (Confusión estética) |
+| **T02: Consulta de Catálogo** | 🟢 100% Éxito (Localización Directa) | 🔴 43% Éxito / Abandono masivo (Sin Buscador) |
+| **T03: Proceso de Reserva (CTA)** | 🟢 100% Éxito (Conversión Efectiva) | 🔴 0% Éxito (Bloqueo absoluto por enlace roto) |
+| **Métrica Global Percibida (SUS)** | **84.00 (Excelente / Elegible)** | **31.07 (No Aceptable / Calificación Crítica)** |
 
->>> gazerecorder en versión de pruebas puede estar limitada a 3 usuarios para generar mapa de calor (crédito > 0 para que funcione) 
+🏆 **Resultado Global:** **El Caso A es significativamente más usable que el Caso B.** La alternativa B presenta un fallo crítico insalvable en su embudo de conversión (el botón principal de reserva es inerte), inhabilitando la viabilidad comercial de la plataforma.
 
+---
 
-### 4.f Usability Report de B
-![Método UX](img/usability-report.png) 
------
+## 4.e Aplicación del Método Eye Tracking
 
->>> Añadir report de usabilidad para práctica B (la de los compañeros) aportando resultados y valoración de cada debilidad de usabilidad. 
->>> Enlazar aqui con el archivo subido a P4/ que indica qué equipo evalua a qué otro equipo.
+Para el análisis biométrico del **Caso B**, modelamos las sesiones de rastreo ocular utilizando algoritmos basados en web a través de la API de captación visual de *GazeRecorder*. 
 
->>> Complementad el Case Study en su Paso 4 con una Valoración personal del equipo sobre esta tarea
+* **Nomenclatura de Archivos de Fijación:** El material biométrico consolidado se almacena bajo el formato estricto `analisis[Usuario].[Pagina].jpg`, donde el primer dígito identifica al sujeto participante (Sujeto 1 o Sujeto 2) y el segundo dígito la pantalla del layout bajo inspección (1: Landing/Home, 2: Catálogo/Biblioteca, 3: Vista de Detalle).
 
+Aquí se expone un ejemplo del mapa de calor consolidado durante la navegación libre de la muestra:
 
+![Mapa de Calor - Eye Tracking Caso B](./EyeTracking/analisis1.1.jpg)
 
-<br>
+* **Análisis de Fijación Directa:** El mapa biométrico corrobora que, aunque el logotipo y las imágenes principales logran un anclaje visual inicial correcto (puntos de calor concentrados), la posterior trayectoria de lectura del ojo quiebra debido a la inconsistencia tipográfica, generando zonas de silencio visual absoluto sobre los textos densos y un patrón de búsqueda errático al toparse con el botón inactivo de reservas.
+
+---
+
+## 4.f Usability & Accessibility Report de B
+
+La auditoría formal de usabilidad y el análisis de cumplimiento normativo según las pautas de la norma **WCAG 2.2 AA (UNE-EN 301549)** han sido debidamente estructurados e integrados en sus correspondientes actas técnicas.
+
+* 📄 [Ver Informe de Usabilidad Detallado (Usability-Report-template.md)](../P5/Usability-Report-template.md)
+* ♿ [Ver Auditoría de Accesibilidad POUR (Accessibility-Report-template.md)](../P5/Acceibility-Report-template.md)
+
+### Valoración Personal del Equipo sobre la Tarea 4
+La ejecución de este bloque metodológico ha sido reveladora para el equipo. Nos ha permitido experimentar de primera mano cómo una interfaz con un apartado gráfico inicial prometedor y moderno (como es el caso de la web de nuestros compañeros) puede quedar completamente inutilizada en términos de negocio debido a descuidos en el desarrollo del código subyacente (enlaces vacíos) y a la ausencia de elementos de interacción básicos (filtros o buscadores). 
+
+Esta práctica nos demuestra de forma empírica que el diseño centrado en el usuario (DCU) no es una capa puramente estética, sino un compromiso riguroso entre la accesibilidad técnica, la consistencia visual y la operatividad de los flujos.
 
 ## Paso 5. Exportación y Documentación 
 
