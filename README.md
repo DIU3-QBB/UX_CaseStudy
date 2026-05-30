@@ -609,30 +609,14 @@ La ejecución de este bloque metodológico ha sido reveladora para el equipo. No
 
 Esta práctica nos demuestra de forma empírica que el diseño centrado en el usuario (DCU) no es una capa puramente estética, sino un compromiso riguroso entre la accesibilidad técnica, la consistencia visual y la operatividad de los flujos.
 
-## Paso 5. Exportación y Documentación 
-
-
-### 5.a Exportación a HTML/React
-![Método UX](img/usabilityReview.png) 
-----
-
->>> Breve descripción de esta tarea. Las evidencias de este paso quedan subidas a P5/
-
-
-### 5.b Documentación con Storybook
-![Método UX](img/usabilityReview.png)
-----
-
->>> Breve descripción de esta tarea. Las evidencias de este paso quedan subidas a P5/
-
-
-<br>
 
 ## Conclusiones finales & Valoración de las prácticas
 
 
->>> Opinión FINAL del proceso de desarrollo de diseño siguiendo metodología UX y valoración (positiva /negativa) de los resultados obtenidos. ¿Qué se puede mejorar? Recuerda que este tipo de texto se debe eliminar del template que se os proporciona 
-
+>>> Opinión FINAL del proceso de desarrollo de diseño siguiendo metodología UX y valoración (positiva /negativa) de los resultados obtenidos. ¿Qué se puede mejorar?
+>>> 
+Debido a que el grupo al que estábamos adjudicados ha realizado el análisis a otro proyecto, no hemos podido hacer este análisis que se solicita.
+Por el momento sigo a la espera de la respuesta a esta cuestión enviada al correo de los profesores, tanto a mgea@ugr.es como a antares@ugr.es, para saber como proceder al respecto.
 
 
 
