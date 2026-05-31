@@ -613,10 +613,23 @@ Esta práctica nos demuestra de forma empírica que el diseño centrado en el us
 ## Conclusiones finales & Valoración de las prácticas
 
 
->>> Opinión FINAL del proceso de desarrollo de diseño siguiendo metodología UX y valoración (positiva /negativa) de los resultados obtenidos. ¿Qué se puede mejorar?
->>> 
-Debido a que el grupo al que estábamos adjudicados ha realizado el análisis a otro proyecto, no hemos podido hacer este análisis que se solicita.
-Por el momento sigo a la espera de la respuesta a esta cuestión enviada al correo de los profesores, tanto a mgea@ugr.es como a antares@ugr.es, para saber como proceder al respecto.
+### Opinión Final del Proceso de Desarrollo
+La implementación de una metodología de Diseño Centrado en el Usuario (DCU) a lo largo de este proyecto ha demostrado ser una herramienta indispensable para validar las decisiones de arquitectura de información y diseño visual. La transición desde los bocetos de baja fidelidad hasta el prototipo interactivo funcional se planteó bajo una hipótesis de máxima eficiencia interactiva. Sin embargo, someter la interfaz de **Goiko Experience** a una auditoría técnica externa mixta (biométrica, psicométrica y pericial) nos ha proporcionado una perspectiva objetiva sobre el rendimiento real de nuestra plataforma frente a usuarios reales.
 
+La recogida de datos empíricos corrobora que la metodología UX mitiga de forma drástica el "sesgo del desarrollador", sacando a la luz fricciones invisibles para el equipo de diseño pero críticas para la conversión del negocio.
+
+### Valoración de los Resultados Obtenidos
+* **Balance Global:** 🟢 **Altamente Positivo.**
+* **Justificación Cuantitativa:** La obtención de una Puntuación Media Final SUS de **84.25/100 (Excelente / Grado A)** sitúa a *Goiko Experience* en un rango de madurez interactiva muy elevado. Los tiempos de resolución en las misiones de nuestro prototipo (15-23 segundos para reservas y 7-15 segundos para contacto) demuestran que la interfaz es intuitiva y que la curva de aprendizaje para un usuario genérico o senior es casi inmediata.
+* **Lección de los Datos Biométricos:** A pesar de la excelente puntuación subjetiva, la aplicación de *Eye Tracking* por parte de nuestros evaluadores reveló un hallazgo crítico: **el 80% de los usuarios ignoró por completo el header**. Esto demuestra un fenómeno de "ceguera de cabecera", donde el botón principal de reserva de la parte superior quedó anulado por la potencia visual y el contraste de los CTAs distribuidos a lo largo del cuerpo del layout.
+
+### Áreas de Mejora (Actionable Insights para el Próximo Sprint)
+Para transformar los datos de la auditoría en optimizaciones de producción reales, el equipo de diseño define las siguientes líneas de actuación inmediata:
+
+1. **Optimización del Embudo en Cabecera (Prioridad Alta):** Rediseñar el componente del header modificando su fondo y tipografía. Es necesario aumentar el contraste del CTA "Reservar Mesa" mediante una masa de color sólida que rompa la monotonía visual y capte las fijaciones primarias (0-3 segundos) detectadas en los heatmaps.
+2. **Segmentación Arquitectónica de la Carta (Prioridad Media):** Para solventar la fatiga de scroll provocada por una página excesivamente larga (que dilata el tiempo de localización del contacto en usuarios con baja competencia digital), se propone desacoplar el menú gastronómico de la Landing Page principal, trasladándolo a una vista indexada o sección interna independiente.
+3. **Refactorización de Accesibilidad WCAG 2.2 AA (Prioridad Alta):** Ajustar la paleta cromática de los botones naranjas para asegurar una ratio de contraste de al menos 4.5:1, eliminar la redundancia de los textos alternativos (`alt`) en componentes adyacentes para agilizar la lectura con lectores de pantalla y dotar de etiquetas semánticas (`<label>`) explícitas al motor de búsqueda.
+
+En conclusión, los resultados validan la solidez estructural de la propuesta de *Goiko Experience*, pero evidencian que la estética de alta fidelidad nunca debe comprometer los principios de contraste normativo y jerarquía visual de los elementos de conversión.
 
 
